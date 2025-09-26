@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 321c693746d687d4596a6d3910fc56e4, type: 3}
+  m_Name: SO_EnemySlime
+  m_EditorClassIdentifier: 
+  _key: Enemy01
+  _prefab: {fileID: 1045080261510678201, guid: 2fb60069e0eed664aa3e7b96b239b14c, type: 3}
+  _point: 10
+  _maxHp: 15
+  _speed: 5

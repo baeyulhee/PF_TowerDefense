@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be1b5ca821abe3d42b4344d435961b01, type: 3}
+  m_Name: Stage3
+  m_EditorClassIdentifier: 
+  _stageName: Stage3
+  _backgroundMusic: {fileID: 8300000, guid: a2e0b456aa6564e46ae00ed9ab340c16, type: 3}
+  _initPoint: 100
+  _stageReward: 100
+  _waveInterval: 5
+  _coreHp: 10
+  _spawnData:
+  - EnemyInfo: {fileID: 11400000, guid: 727c2a57b6bc37d40bd733ee7b12401a, type: 2}
+    Amount: 3
+    Interval: 2
+  - EnemyInfo: {fileID: 11400000, guid: 727c2a57b6bc37d40bd733ee7b12401a, type: 2}
+    Amount: 5
+    Interval: 1.8
+  - EnemyInfo: {fileID: 11400000, guid: 727c2a57b6bc37d40bd733ee7b12401a, type: 2}
+    Amount: 8
+    Interval: 1.5
+  - EnemyInfo: {fileID: 11400000, guid: 727c2a57b6bc37d40bd733ee7b12401a, type: 2}
+    Amount: 12
+    Interval: 1
+  - EnemyInfo: {fileID: 11400000, guid: f9c0fb6d8b24980438056df4bd724ca7, type: 2}
+    Amount: 1
+    Interval: 1
