@@ -26,6 +26,7 @@ public class TowerSlotUIElement : ObjectUIElement, IPointerClickHandler, IPointe
     }
     public void OnPointerEnter(PointerEventData eventData)
     {
+        _outLine.enabled = true;
         DOTween.To(() => _outLine.OutlineWidth,
                     x => _outLine.OutlineWidth = x,
                     5f,
@@ -38,6 +39,7 @@ public class TowerSlotUIElement : ObjectUIElement, IPointerClickHandler, IPointe
                     x => _outLine.OutlineWidth = x,
                     0f,
                     0.5f)
-                .SetEase(Ease.OutQuad);
+                .SetEase(Ease.OutQuad)
+                .OnComplete(() => _outLine.enabled = false);
     }
 }

@@ -18,7 +18,7 @@ public class UIController : MonoBehaviour
         if (StageData.Inst.WaveCurrentCount >= StageData.Inst.WaveTotalCount)
         {
             var effect = Instantiate(_bossIntroVisual, transform);
-            effect.EndAction += () =>  Destroy(effect.gameObject);
+            effect.OnComplete += () =>  Destroy(effect.gameObject);
             effect.Play();
         }
     }

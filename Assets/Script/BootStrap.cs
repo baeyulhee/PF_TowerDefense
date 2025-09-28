@@ -14,6 +14,7 @@ public class BootStrap : MonoBehaviour
         DontDestroyOnLoad(EventBus.Inst.gameObject);
 
         DontDestroyOnLoad(FindObjectOfType<SoundManager>().gameObject);
+        //DontDestroyOnLoad(FindObjectOfType<OverlayUIManager>().gameObject);
 
         DontDestroyOnLoad(FindObjectOfType<AudioListener>());
         SceneManager.LoadScene("TitleScene");

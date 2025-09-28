@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _key: Tower01
   _prefab: {fileID: 3098266470443681851, guid: c4b61f5fd8f3f934d9c397399456d647, type: 3}
-  _cost: 70
+  _cost: 50
   _upgradeUnit: {fileID: 11400000, guid: f6bbdf904d7af0b4b8cd8be1d7e3e2fa, type: 2}

@@ -12,7 +12,7 @@ public class Projectile : MonoBehaviour
 
     public void Launch(Action<Enemy> onHitEnemy = null, Enemy target = null, float speed = 20f, float lifeSpan = 5f)
     {
-        OnHitEnemy += onHitEnemy;
+        OnHitEnemy = onHitEnemy;
         _target.Attach(target);
         _speed = speed;
         _lifeSpan = lifeSpan;

@@ -17,9 +17,9 @@ public class EnemyManager : MonoSingleton<EnemyManager>
     }
     public void Expire(Enemy obj)
     {
+        EventBus.Inst.Publish(new EnemyDestroyEvent(obj));
+
         _enemyPool.ReturnItem(obj);
         StageData.Inst.ActiveEnemies.Remove(obj);
-
-        EventBus.Inst.Publish(new EnemyDestroyEvent(obj));
     }
 }
